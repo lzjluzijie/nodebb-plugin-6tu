@@ -1,0 +1,9 @@
+{
+    "id": "nodebb-plugin-6tu",
+    "description": "A nodebb plugin that upload images to 6tu.halu.lu",
+    "url": "https://github.com/lzjluzijie/nodebb-plugin-6tu",
+    "library": "./index.js",
+    "hooks": [
+        { "hook": "filter:uploadImage", "method": "upload", "priority": 6 }
+    ]
+}
