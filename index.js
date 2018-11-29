@@ -1,3 +1,6 @@
+//Modified from https://github.com/barisusakli/nodebb-plugin-imgur
+//Also check https://github.com/lzjluzijie/nodebb-plugin-smms
+
 'use strict';
 
 var request = require('request');
@@ -54,7 +57,7 @@ plugin.upload = function(data, callback) {
 		console.log('Upload successful! Server responded with:', body);
 		return callback(null, {
 			name: image.name,
-			url: resp.data.url
+			url: resp.url
 		});
 	});
 
